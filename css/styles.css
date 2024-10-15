@@ -1,10 +1,16 @@
-img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 body {
@@ -39,7 +45,7 @@ body {
   color: #000;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .nav {
     display: flex;
     justify-content: space-between;
@@ -161,11 +167,23 @@ body {
 
 .title__header {
   font-size: 2.5rem;
-  margin-top: 1rem;
+  text-align: center;
+  margin: 1rem 0;
 }
 
-@media screen and (min-width: 768px) {
+.role {
+  text-align: center;
+  color: #474747;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
   .title__header {
+    font-size: 3.5rem;
+  }
+
+  .role {
     font-size: 3rem;
   }
 }
@@ -173,6 +191,7 @@ body {
 /* Buttons */
 .btn {
   border: 1px solid #ccc;
+  font-size: 1.5rem;
   border-radius: 2rem;
   padding: 1rem 2rem;
   transition: all 0.3s ease;
@@ -199,9 +218,10 @@ body {
   gap: 1rem 0.5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -209,6 +229,10 @@ body {
 
 .image--container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 46vw;
   max-width: 400px;
 }
 
@@ -228,10 +252,75 @@ body {
   height: 2rem;
 }
 
+@media screen and (min-width: 476px) {
+  .image--container {
+    width: 210.219px;
+    height: 210.219px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image--container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image--container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
 /* Clicable */
 .buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+}
+
+/* Hero block */
+.hero__header {
+  justify-self: center;
+  align-self: center;
+}
+
+.hero__content {
+  justify-self: center;
+  align-self: center;
+}
+
+.icon-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__content {
+    justify-self: left;
+  }
+
+  .hero__header {
+    justify-self: right;
+  }
+
+  .hero .grid--1x2 {
+    gap: 4rem;
+  }
+}
+
+/* Blocks */
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
 }
