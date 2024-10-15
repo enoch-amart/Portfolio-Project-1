@@ -130,3 +130,26 @@ body {
     font-size: 3rem;
   }
 }
+
+/* Buttons */
+.btn {
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #000;
+  cursor: pointer;
+  color: white;
+}
+
+.btn--main {
+  background: #272626;
+  color: white;
+}
+
+.btn--main:hover {
+  background: #000;
+}
