@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .custom-list li {
+        list-style-type: none; /* Remove default bullet points */
+        position: relative; /* Necessary for absolutely positioning the image */
+        padding-left: 40px; /* Create space for the image */
+      }
+
+      .custom-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); /* Vertically center the image */
+        width: 30px; /* Adjust width of the image */
+        height: 30px; /* Adjust height of the image */
+        background-image: url("/assets/checkmark.png"); /* Path to your image */
+        background-size: contain; /* Scale the image to fit the box */
+        background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="custom-list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+  </body>
+</html>
