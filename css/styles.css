@@ -1,3 +1,8 @@
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -201,9 +206,14 @@ body {
 }
 
 /* Images */
-.image {
-  max-width: 20rem;
-  max-height: 20rem;
+
+.image--container {
+  position: relative;
+  max-width: 400px;
+}
+
+.image--container > img {
+  width: 100%;
 }
 
 .image--radius {
@@ -216,4 +226,12 @@ body {
 
 .icon {
   height: 2rem;
+}
+
+/* Clicable */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
