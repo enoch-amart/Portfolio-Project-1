@@ -145,7 +145,7 @@ body {
 .box {
   border: 1px solid #ccc;
   border-radius: 1rem;
-  padding: 1rem 2rem;
+  padding: 1.5rem;
   display: inline-block;
 }
 
@@ -378,5 +378,35 @@ body {
 @media screen and (min-width: 1572px) {
   .list--tick .list__item {
     width: calc(33.33% - 1rem);
+  }
+}
+
+/* Projects */
+.project__content {
+  display: flex;
+  justify-content: center;
+}
+
+.project__image--container > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 678px) {
+  .grid--2x3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  .grid--span {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 1145px) {
+  .grid--2x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid--span {
+    grid-column: span 1;
   }
 }
