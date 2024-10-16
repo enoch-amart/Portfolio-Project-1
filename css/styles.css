@@ -424,3 +424,44 @@ body {
 .about--content {
   align-self: center;
 }
+
+/* footer */
+.list__item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__label {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .footer__list {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/* contact */
+.box--contact {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact__span {
+  padding-left: 0.5rem;
+  text-align: center;
+}
+
+.contact__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
