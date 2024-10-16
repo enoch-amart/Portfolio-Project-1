@@ -149,6 +149,10 @@ body {
   display: inline-block;
 }
 
+.box--about {
+  text-align: center;
+}
+
 .box--image {
   border: 0;
 }
@@ -169,7 +173,7 @@ body {
 
 /* Container */
 .container {
-  max-width: 1140px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -409,4 +413,14 @@ body {
   .grid--span {
     grid-column: span 1;
   }
+}
+
+/* About */
+.about--image {
+  justify-self: center;
+  align-self: center;
+}
+
+.about--content {
+  align-self: center;
 }
