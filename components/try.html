@@ -4,32 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      /* Container to center the list as a whole */
+      .list-container {
+        display: flex;
+        justify-content: center; /* Horizontally center the list */
+        align-items: center; /* Vertically center the list if the container grows */
+        height: 100vh; /* Adjust height as needed */
+      }
+
+      /* Box around the list */
+      .box {
+        border: 1px solid black;
+        width: 80%; /* Initial width, adjust as needed */
+        max-width: 600px; /* Set a max-width to limit the box size */
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center the list items inside the box */
+        gap: 10px; /* Add space between list items */
+      }
+
+      .custom-list {
+        display: flex;
+        flex-wrap: wrap; /* Enable wrapping when the box is resized */
+        justify-content: center;
+        list-style: none; /* Remove default list style */
+        padding: 0;
+        margin: 0;
+      }
+
       .custom-list li {
-        list-style-type: none; /* Remove default bullet points */
-        position: relative; /* Necessary for absolutely positioning the image */
-        padding-left: 40px; /* Create space for the image */
+        position: relative;
+        padding-left: 40px; /* Space for the image */
+        width: calc(
+          50% - 20px
+        ); /* Adjust the width for 2 columns, minus the gap */
+        box-sizing: border-box;
       }
 
       .custom-list li::before {
+        background-image: url("/assets/checkmark.png");
+        background-repeat: no-repeat;
+        background-size: contain;
         content: "";
-        position: absolute;
+        height: 30px;
         left: 0;
+        position: absolute;
         top: 50%;
-        transform: translateY(-50%); /* Vertically center the image */
-        width: 30px; /* Adjust width of the image */
-        height: 30px; /* Adjust height of the image */
-        background-image: url("/assets/checkmark.png"); /* Path to your image */
-        background-size: contain; /* Scale the image to fit the box */
-        background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+        transform: translateY(-50%);
+        width: 30px;
+      }
+
+      /* Responsive behavior: Adjust width for more columns */
+      @media (min-width: 768px) {
+        .custom-list li {
+          width: calc(33.33% - 20px); /* Adjust to 3 columns */
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .custom-list li {
+          width: calc(25% - 20px); /* Adjust to 4 columns */
+        }
       }
     </style>
   </head>
   <body>
-    <ul class="custom-list">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-    </ul>
+    <div class="list-container">
+      <div class="box">
+        <ul class="custom-list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+          <li>Item 6</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
