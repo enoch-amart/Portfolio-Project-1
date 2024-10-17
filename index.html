@@ -14,14 +14,13 @@
       <div class="nav__logo">Enoch Amarteifio</div>
       <div>
         <ul class="list nav__links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experiences">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
         </ul>
       </div>
     </nav>
-
     <nav id="hamburger-nav">
       <div class="nav__logo">Enoch Amarteifio</div>
       <div class="hamburger-menu">
@@ -32,19 +31,245 @@
         </div>
 
         <div class="menu-links">
-          <li><a href="#" onclick="toggleMenu()">About</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li>
-            <a href="#" onclick="toggleMenu()">Experience</a>
+            <a href="#experiences" onclick="toggleMenu()">Experience</a>
           </li>
           <li>
-            <a href="#" onclick="toggleMenu()">Projects</a>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
           </li>
           <li>
-            <a href="#" onclick="toggleMenu()">Contacts</a>
+            <a href="#contacts" onclick="toggleMenu()">Contacts</a>
           </li>
         </div>
       </div>
     </nav>
+    <section class="block hero">
+      <div class="container grid grid--1x2">
+        <div class="hero__header">
+          <div class="image--container">
+            <img src="/assets/profile-pic.png" alt="" />
+          </div>
+        </div>
+        <div class="hero__content">
+          <div class="title">
+            <p class="title__paragraph">Hello I'm</p>
+            <h1 class="title__header">Enoch Amarteifio</h1>
+          </div>
+          <h2 class="role">Frontend Developer</h2>
+          <div class="buttons">
+            <button class="btn">Download CV</button>
+            <button class="btn btn--main">Contact Info</button>
+          </div>
+          <div class="icon-group">
+            <img class="icon" src="/assets/linkedin.png" alt="" />
+            <img class="icon" src="/assets/github.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section id="about" class="block">
+        <div class="title">
+          <p class="title__paragraph">Get to Know more</p>
+          <h1 class="title__header">About me</h1>
+        </div>
+        <div class="container grid grid--1x2">
+          <div class="about--image">
+            <div class="image--container">
+              <img class="image--radius" src="/assets/about-pic.png" alt="" />
+            </div>
+          </div>
+          <div class="about--content">
+            <div class="grid grid--1x2-small">
+              <div class="box box--about">
+                <img class="icon" src="/assets/experience.png" alt="" />
+                <h2 class="experience__heading">Experience</h2>
+                <p class="experience__body">
+                  2+ years
+                  <br />
+                  Frontend Development
+                </p>
+              </div>
+              <div class="box box--about">
+                <img class="icon" src="/assets/experience.png" alt="" />
+                <h2 class="experience__heading">Education</h2>
+                <p class="experience__body">
+                  BSC. Bachelor Degree
+                  <br />
+                  MSC. Master Degree
+                </p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              pariatur molestiae dolor voluptate repellat eos ea, nisi commodi,
+              sequi reiciendis dolorum? Necessitatibus placeat facere nam,
+              consectetur dolores at vitae velit.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="experiences" class="block">
+        <div class="title">
+          <p class="title__paragraph">Browse my Recent</p>
+          <h1 class="title__header">Projects</h1>
+        </div>
+        <div class="experience">
+          <div class="container grid grid--1x2 grid--1x2-small">
+            <article class="box box--experience">
+              <h2 class="role">Frontend Development</h2>
+              <div class="list__container">
+                <ul class="list list--tick">
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">HTML</h2>
+                      <p class="experience__body">Experienced</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">SAAS</h2>
+                      <p class="experience__body">Intermediate</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">TypeScript</h2>
+                      <p class="experience__body">Basic</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">CSS</h2>
+                      <p class="experience__body">Experienced</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">JavaScript</h2>
+                      <p class="experience__body">Basic</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">Material UI</h2>
+                      <p class="experience__body">Intermediate</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="box box--experience">
+              <h2 class="role">Backend Development</h2>
+              <div class="list__container">
+                <ul class="list list--tick">
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">MySQL</h2>
+                      <p class="experience__body">Basic</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">Node JS</h2>
+                      <p class="experience__body">Intermediate</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">Express Js</h2>
+                      <p class="experience__body">Intermediate</p>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list--experience">
+                      <h2 class="experience__heading">Git</h2>
+                      <p class="experience__body">Intermediate</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="block projects">
+        <div class="title">
+          <p class="title__paragraph">Browse my Recent</p>
+          <h1 class="title__header">Projects</h1>
+        </div>
+        <div class="container grid grid--2x3">
+          <article class="box">
+            <div class="project__element">
+              <div class="project__image--container">
+                <img class="image--radius" src="/assets/project-1.png" alt="" />
+              </div>
+              <h2 class="project__title">Project one</h2>
+              <div class="buttons">
+                <button class="btn">GitHub</button>
+                <button class="btn">Live Demo</button>
+              </div>
+            </div>
+          </article>
+          <article class="box">
+            <div class="project__element">
+              <div class="project__image--container">
+                <img class="image--radius" src="/assets/project-2.png" alt="" />
+              </div>
+              <h2 class="project__title">Project Two</h2>
+              <div class="buttons">
+                <button class="btn">GitHub</button>
+                <button class="btn">Live Demo</button>
+              </div>
+            </div>
+          </article>
+          <article class="box grid--span">
+            <div class="project__element">
+              <div class="project__image--container">
+                <img class="image--radius" src="/assets/project-3.png" alt="" />
+              </div>
+              <h2 class="project__title">Project Three</h2>
+              <div class="buttons">
+                <button class="btn">GitHub</button>
+                <button class="btn">Live Demo</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contacts" class="block">
+        <div class="container contact">
+          <div class="title">
+            <p class="title__paragraph">Get in Touch</p>
+            <h1 class="title__header">Contact me</h1>
+          </div>
+          <div class="box box--contact">
+            <div class="contact__group">
+              <img class="icon" src="/assets/email.png" alt="" />
+              <span class="contact__span">amarteifioenoch4@gmail.com</span>
+            </div>
+            <div class="contact__group">
+              <img class="icon" src="/assets/linkedin.png" alt="" />
+              <span class="contact__span">enoch-amart</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="block footer">
+      <div class="container">
+        <ul class="list footer__list">
+          <li class="list__item"><a href="#about">About</a></li>
+          <li class="list__item"><a href="#experiences">Experience</a></li>
+          <li class="list__item"><a href="projects">Projects</a></li>
+          <li class="list__item"><a href="contacts">Contact</a></li>
+        </ul>
+        <p class="footer__label">
+          Copyright &copy; 2024 Enoch Amarteifio. All Rights Reserved
+        </p>
+      </div>
+    </footer>
 
     <script src="./script.js"></script>
   </body>

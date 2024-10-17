@@ -20,15 +20,15 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -119,6 +119,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
+  z-index: 1;
   transition: all 0.3 ease-in-out;
 }
 
@@ -266,7 +267,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   text-transform: capitalize;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .title__paragraph {
@@ -276,7 +277,7 @@ a:hover {
 }
 
 .title__header {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   margin: 1rem 0;
 }
@@ -448,6 +449,10 @@ a:hover {
   align-items: center;
 }
 
+.experience__heading {
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 947px) {
   .list--tick .list__item {
     width: auto;
@@ -477,6 +482,11 @@ a:hover {
 
 .project__image--container > img {
   width: 100%;
+}
+
+.project__title {
+  font-size: 2rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 678px) {
