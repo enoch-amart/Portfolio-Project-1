@@ -10,15 +10,42 @@
     <link rel="stylesheet" href="/css/mediaqueries.css" />
   </head>
   <body>
-    <nav class="block nav">
+    <nav id="desktop-nav">
       <div class="nav__logo">Enoch Amarteifio</div>
-      <ul class="list nav__list">
-        <li class="nav__item"><a href="#">About</a></li>
-        <li class="nav__item"><a href="#">Experience</a></li>
-        <li class="nav__item"><a href="#">Projects</a></li>
-        <li class="nav__item"><a href="#">Contacts</a></li>
-      </ul>
+      <div>
+        <ul class="list nav__links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
     </nav>
+
+    <nav id="hamburger-nav">
+      <div class="nav__logo">Enoch Amarteifio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="#" onclick="toggleMenu()">Experience</a>
+          </li>
+          <li>
+            <a href="#" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="#" onclick="toggleMenu()">Contacts</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
     <script src="./script.js"></script>
   </body>
 </html>
