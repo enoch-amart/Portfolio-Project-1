@@ -1,0 +1,35 @@
+.box {
+  width: 50rem;
+  height: 50rem;
+  background: gold;
+  border: 2px solid red;
+  margin: 2rem;
+  position: relative;
+}
+
+.box1 {
+  width: 10rem;
+  height: 10rem;
+  background: green;
+}
+
+.box2 {
+  width: 10rem;
+  height: 10rem;
+  background: blue;
+  position: absolute;
+  top: 1rem;
+  right: 10%;
+}
+
+.box3 {
+  width: 10rem;
+  height: 10rem;
+  background: orange;
+}
+
+.box4 {
+  width: 10rem;
+  height: 10rem;
+  background: black;
+}
